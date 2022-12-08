@@ -18,6 +18,17 @@ const Formulario = ({ pacientes, paciente, setPacientes }) => {
 
         return random + fecha
     }
+
+    useEffect(() => {
+        if(Object.keys(paciente).length > 0){
+          setNombre(paciente.nombre)
+          setPropietario(paciente.propietario)
+          setEmail(paciente.email)
+          setAlta(paciente.alta)
+          setSintomas(paciente.sintomas)
+        }
+      }, [paciente])
+
     const handleSubmit = (e) => {
         e.preventDefault();
         if([nombre, propietario, email, alta, sintomas].includes('')){
