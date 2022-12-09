@@ -46,11 +46,24 @@ const Formulario = ({ pacientes, paciente, setPacientes }) => {
             propietario,
             email,
             alta,
-            sintomas,
-            id: generarId()
+            sintomas
         }
 
-        setPacientes([...pacientes, objetoPacientes])
+        if(paciente.id){
+            // Editando registro, asignamos el id del registro
+            objetoPacientes.id = paciente.id
+            const pacientesActualizados = pacientes.map( pacienteState => 
+                pacienteState.id === paciente.id ? objetoPacientes : pacienteState
+            )
+
+            setPacientes(pacientesActualizados)
+        } else {
+            // Nuevo registro
+            objetoPacientes.id = generarId()
+            setPacientes([...pacientes, objetoPacientes])
+        }
+
+        
         setNombre('')
         setPropietario('')
         setEmail('')
@@ -126,7 +139,7 @@ const Formulario = ({ pacientes, paciente, setPacientes }) => {
                         id="sintomas" 
                     />
                 </div>
-                <input type="submit" className="border-2 p-2 mt-2 w-full text-white rounded-md bg-indigo-700 uppercase font-bold hover:bg-indigo-500 cursor-pointer transition-opacity mb-10" value="Agregar paciente"/>
+                <input value={paciente.id ? "Editar paciente" : "Agregar paciente"} type="submit" className="border-2 p-2 mt-2 w-full text-white rounded-md bg-indigo-700 uppercase font-bold hover:bg-indigo-500 cursor-pointer transition-opacity mb-10"/>
             </form>
         </div>
     )
