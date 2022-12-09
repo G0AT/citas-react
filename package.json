@@ -1,8 +1,9 @@
 {
   "name": "citas-react",
   "private": true,
-  "version": "0.0.0",
+  "version": "5.0.0",
   "type": "module",
+  "author": "Miguel Ángel González López (untalmike)",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
