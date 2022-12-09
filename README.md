@@ -3,7 +3,7 @@
 
 ### 📑 This is a document to explain the little things that's including into the project, if you need gone to specific place, you can use the content table that's here, is an example app to register medical appointment for pets 😻. 
 
-## Table of conteents
+## Table of contents
 ### 1. [Description](#description) 
 ### 2. [Author / Colaborators](#colaborators)
 ### 3. [Instalation Guide](#troubleshooting) 🔧
