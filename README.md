@@ -4,13 +4,13 @@
 ### 📑 This is a document to explain the little things that's including into the project, if you need gone to specific place, you can use the content table that's here, is an example app to register medical appointment for pets 😻. 
 
 ## Table of contents
-### 1. [Description](#description) 
-### 2. [Author / Colaborators](#colaborators)
-### 3. [Instalation Guide](#troubleshooting) 🔧
-### 4. [Document Version](#document-version)
+### 1. [Description](#description) :comet:
+### 2. [Author / Colaborators](#colaborators) :bowtie:
+### 3. [Instalation Guide](#troubleshooting) :gear:
+### 4. [Document Version](#document-version) :clipboard:
 <br>
 
-## Description
+## Description :comet:
 ### > This project was created with Vite js <br>
 ### > It use Tailwind css to power the front-end <br>
 ### > Also it use the localstorage to save the data, this is important, actually dont save any data at none data base <br>
@@ -19,13 +19,13 @@
 ### > The project was created at 2019
 <br>
 
-##  Author / Colaborators
+##  Author / Colaborators :bowtie:
 * ## [@untalmike](https://github.com/untalmike)
 <br>
 
-## Instalation Guide 🔧
+## Instalation Guide :gear:
 * ### if you want install at your local service, needs take the next steps
-    * #### Clone a repo :octocat:
+    * #### Clone the repo :octocat:
     ```
        > git clone https://github.com/untalmike/citas-react.git
     ```
@@ -48,6 +48,6 @@
     ```
     <br>
 
-    ## Document version
-    | (Version 1) |
+    ## Document version :clipboard:
+    | (Version 1.0.2) |
     | ----------- |
